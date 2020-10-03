@@ -1,11 +1,18 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 import PropTypes from "prop-types";
+import { Feather } from '@expo/vector-icons'; 
 
 export default function Weather({temp}){
     return (
         <View style={styles.container}>
-            <Text>{temp}</Text>
+            <View style={styles.halfContainer}>
+                <Feather name="cloud-rain" size={96} color="black" />
+                <Text style={styles.temp}>{temp}º</Text>         
+            </View>
+            <View style={styles.halfContainer}>
+    
+            </View>
         </View>
     );
 }
@@ -37,4 +44,12 @@ const styles = StyleSheet.create({
         justifyContent : "center",
         alignItems:"center",
     },
+    halfContainer:{
+        flex:1,
+        justifyContent:"center",
+        alignItems:"center",
+    },
+    temp:{
+        fontSize: 42,
+    }
 })
