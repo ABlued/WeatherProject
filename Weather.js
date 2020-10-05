@@ -57,7 +57,7 @@ const weatherObject = {
     //     iconName:"",
     //     gradient:[],
     //     title:"",
-    //     subTitle:"",
+    //     subTitle:""Y
     // },
     // Fog:{
     //     iconName:"",
